@@ -5,7 +5,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Liste des clés valides (à remplacer par une base de données si besoin)
+// Tes clés d'accès valides
 const VALID_KEYS = ["CLE-SECRET-123", "CLE-DEMO-456"];
 
 app.post('/api/verify-key', (req, res) => {
@@ -17,4 +17,4 @@ app.post('/api/verify-key', (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Serveur actif sur le port ${PORT}`));
+app.listen(PORT, () => console.log(`Serveur prêt sur le port ${PORT}`));
